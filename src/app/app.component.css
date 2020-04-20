@@ -1,0 +1,27 @@
+.example-button-row a,
+.example-button-row button {
+  margin-right: 8px;
+  font-weight: 400;
+  font-size: large;
+  font-family: 'Lato', sans-serif;
+}
+
+.example-button-row{
+    margin-left: 75%;
+    margin-top: 30px;
+}
+
+.example-button-container {
+  position: absolute;
+  margin-left: 2%;
+  margin-top: 2%;
+}
+
+.header{
+  background-color:#F5C667;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top:0;
+  z-index: 9;
+}
