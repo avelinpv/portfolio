@@ -15,10 +15,6 @@
     font-weight: 400;
 }
 
-img {
-    display: block;
-}
-
 .special {
     width: auto;
 }
@@ -26,19 +22,14 @@ img {
 iframe, img{
     margin: 25px;
     width: 500px;
-    height: 310px;
-    display: inline-block;
+    height: 310px; 
+    display:block;
 }
 
 .rigth-content{
     position: absolute;
-    top: 15%;
     left: 15%;
     width: 85%;
-}
-
-.info{
-    margin-left: 3%;
 }
 
 p {
@@ -65,9 +56,34 @@ a {
 }
 
 a.link-button {
-    margin-left: 30%;
-    margin-right: 25%;
     width: auto;
-    display: block;
     text-align: center;
+}
+
+.project-title{
+    width: 250px;
+}
+
+.project-card{
+    background-color: #f0e3da;
+    margin: 6%;
+    top: 100px;
+}
+
+.link {
+    text-align: center !important;
+    margin: auto;
+    display: block;
+    height: 50px;
+}
+
+.info{
+    position: relative;
+    left: 540px;
+    width: 45%;
+    top: -10%
+}
+
+.verticalImage{
+    position: absolute;
 }

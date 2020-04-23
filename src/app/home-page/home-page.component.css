@@ -1,3 +1,7 @@
+.mat-card-image {
+    margin-top: 0px !important;
+}
+
 .face-pic{
     border-radius: 50%;
     width: 15%;
@@ -23,7 +27,7 @@ h1 {
     text-align: center;
     margin-left: 15%;
     margin-right: 15%;
-    margin-top: 20px;
+    margin-top: 60px;
     font-weight: 580;
     font-family: 'Lato', sans-serif;
 }
@@ -41,7 +45,7 @@ h2{
 
 .projects {
     max-width: 250px;
-    height: 430px;
+    height: 380px;
     z-index: 8;
 }
 
@@ -74,7 +78,7 @@ h2{
     display:block;
 }
 
-a {
+.contact {
     color: #673AB7;
     display:block;
     text-align: center;
@@ -87,15 +91,55 @@ a {
 }
 
 p {
-    color: #F5C667;
+    color: #FFC107;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
 }
 
 p.header-projects {
-    font-size: large;
+    font-size: x-large;
     display:block;
     margin-left:auto;
     margin-right:auto;
+    text-align: center;
+}
+
+.mat-card-image {
+    width: 100% !important;
+    margin-left: 0px;
+}
+
+.hover-container {
+    position: relative;
+    width: calc(100% + 32px);
+    margin-left: -16px;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: calc(100% - 20px);
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #673AB7;
+}
+  
+.hover-container:hover .overlay {
+    opacity: 0.8;
+}
+  
+.text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
     text-align: center;
 }
