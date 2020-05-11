@@ -2,15 +2,39 @@
     margin-top: 0px !important;
 }
 
-.face-pic{
-    border-radius: 50%;
-    width: 15%;
+.container {
     position: relative;
-    margin-top: 10%;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    border: 15px solid #ddd;
+    text-align: center;
+    max-width: 100% !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+
+.face-pic{
+    width: 100%;
+}
+
+.headtext{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0px !important;
+    font-weight: bolder;
+    font-size: 100px;
+    color: #FFC107;
+}
+
+.undertext{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%, -50%);
+    margin: 0px;
+    font-weight: normal;
+    font-size: 30px;
+    color: #FFC107;
 }
 
 .purple-back {
@@ -20,33 +44,26 @@
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.42);
     padding-top: 50px;
     padding-bottom: 50px;
+    margin-bottom: 80px;
+    margin-top: 50px;
 }
 
 h1 {
     color:#673AB7;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 60px;
-    font-weight: 580;
-    font-family: 'Lato', sans-serif;
-}
+    font-family: 'IM Fell English', serif;}
 
 h2{
     color:#673AB7;
     text-align: center;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-top: 20px;
-    font-weight: 400;
-    margin-bottom: 10%;
-    font-family: 'Lato', sans-serif;
+    font-family: 'IM Fell English', serif;
 }
 
 .projects {
     max-width: 250px;
     height: 380px;
     z-index: 8;
+    background-color: #eeeeee;
 }
 
 .project-list {
@@ -68,8 +85,7 @@ h2{
     vertical-align: top;
     display: inline-block;
     text-align: center;
-    font-family: 'Lato', sans-serif;
-}
+    font-family: 'IM Fell English', serif;}
 
 .img-conntact{
     max-width: 150px;
@@ -86,13 +102,13 @@ h2{
     bottom: 40px;
     font-weight: 500;
     font-size: large;
-    font-family: 'Lato', sans-serif;
+    font-family: 'IM Fell English', serif;
     text-decoration: none;
 }
 
 p {
     color: #FFC107;
-    font-family: 'Lato', sans-serif;
+    font-family: 'IM Fell English', serif;
     text-decoration: none;
 }
 
@@ -142,4 +158,10 @@ p.header-projects {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     text-align: center;
+}
+
+b{
+    font-family:'IM Fell English', serif;
+    color: #FFC107;
+    font-size: large;
 }

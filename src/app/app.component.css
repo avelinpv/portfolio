@@ -3,7 +3,7 @@
   margin-right: 8px;
   font-weight: 400;
   font-size: large;
-  font-family: 'Lato', sans-serif;
+  font-family: 'IM Fell English', serif;
 }
 
 .example-button-row{
@@ -14,14 +14,27 @@
 .example-button-container {
   position: absolute;
   margin-left: 2%;
-  margin-top: 2%;
+  margin-top: 2%; 
+}
+
+.mat-button{
+  font-family: 'IM Fell English', serif !important;
+  font-size: x-large; 
 }
 
 .header{
-  background-color:#F5C667;
-  height: 100px;
+  background-color: transparent;
+  height: 80px;
   position: fixed;
   width: 100%;
   top:0;
   z-index: 9;
+}
+
+.header-scroll{
+  background-color:#F5C667;
+}
+
+router-outlet{
+  width: 100vh;
 }
