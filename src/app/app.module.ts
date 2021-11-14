@@ -12,11 +12,16 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
+import { MatTreeModule } from '@angular/material/tree';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { HomePageComponent } from './home-page/home-page.component';
 import { CvPageComponent } from './cv-page/cv-page.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+
+import { LayoutModule } from '@angular/cdk/layout';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -36,7 +41,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     MatSidenavModule,
     MatDividerModule,
     MatListModule,
-    NgbModule
+    NgbModule,
+    LayoutModule,
+    MatTreeModule,
+    MatToolbarModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]

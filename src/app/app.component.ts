@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { HostListener } from '@angular/core';
+import { BreakpointObserver, Breakpoints, BreakpointState } from '@angular/cdk/layout';
 
 @Component({
   selector: 'app-root',
@@ -8,10 +9,28 @@ import { HostListener } from '@angular/core';
 })
 
 export class AppComponent {
-  title = 'portfolio';
+
+  gtMd: boolean;
+  gtSm: boolean;
+  panelOpen = false;
+
+  constructor(public breakpointObserver: BreakpointObserver) { 
+  }
 
   ngOnInit() {
+    this.breakpointObserver.observe([
+      Breakpoints.Medium,
+      Breakpoints.Large,
+      Breakpoints.XLarge
+    ]).subscribe((state: BreakpointState) => {
+      if (state.matches) {
+        this.gtMd = true;
+      }else{
+        this.gtMd = false;
+      }
+    });
 
+    
   }
 
   @HostListener('window:scroll', ['$event'])

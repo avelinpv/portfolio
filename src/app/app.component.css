@@ -1,34 +1,38 @@
-.example-button-row a,
-.example-button-row button {
-  margin-right: 8px;
-  font-weight: 400;
-  font-size: large;
-  font-family: 'IM Fell English', serif;
-}
 
-.example-button-row{
-    margin-left: 75%;
-    margin-top: 30px;
-}
-
-.example-button-container {
+.button-container {
+  display: block;
   position: absolute;
-  margin-left: 2%;
-  margin-top: 2%; 
+  right: 5%;
 }
 
 .mat-button{
   font-family: 'IM Fell English', serif !important;
-  font-size: x-large; 
+  font-size: large; 
 }
 
-.header{
+.mat-toolbar{
   background-color: transparent;
-  height: 80px;
   position: fixed;
+  height: 70px;
   width: 100%;
-  top:0;
   z-index: 9;
+  justify-content: center;
+}
+
+.menu-icon{
+  position: absolute;
+  width: 100%;
+}
+
+.menu-button{
+  position: absolute;
+  right: 30px;
+  top: 5px;
+}
+
+.mat-expansion-panel{
+  background: transparent;
+  box-shadow: none;
 }
 
 .header-scroll{
